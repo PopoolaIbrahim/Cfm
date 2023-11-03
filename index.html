@@ -5,11 +5,16 @@
   <style>
     .header {
       background-color: #4CAF50;
-      height: 120px;
+      height: 80px;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
+      text-align: center;
+      line-height: 80px; /* Vertically center the text */
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold;
     }
 
     .banner-container {
@@ -17,7 +22,7 @@
       width: 468px;
       height: 120px;
       display: none; /* Initially hide the banner */
-      margin-top: 120px; /* Add margin to move the banner below the header */
+      margin-top: 80px; /* Add margin to move the banner below the header */
     }
 
     .banner-image {
@@ -71,7 +76,7 @@
 </head>
 <body>
   <!-- Green Header -->
-  <div class="header"></div>
+  <div class="header">Commands For Minecraft</div>
 
   <!-- Sidebar button -->
   <div class="open-btn" id="openBtn" onclick="openSidebar()">&#9776;</div>
