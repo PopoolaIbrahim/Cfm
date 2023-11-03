@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .button-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .responsive-button {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      max-width: 100%; /* Ensure it doesn't overflow */
+    }
+
+    .responsive-button img {
+      width: 24px; /* Adjust the size of the square image icon */
+      height: 24px; /* Same as width to make it square */
+      margin-right: 10px; /* Margin between the icon and text */
+    }
+
+    .responsive-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button class="responsive-button">
+      <img src="your-icon-image.png" alt="Icon"> Teleportation
+    </button>
+  </div>
+</body>
+</html>
