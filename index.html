@@ -16,6 +16,13 @@
       font-size: 20px;
       font-weight: bold;
     }
+    .banner-container {
+      max-width: 100%;
+      width: 468px;
+      height: 120px;
+      display: none; /* Initially hide the banner */
+      margin-top: 80px; /* Add margin to move the banner below the header */
+    }
 
     .sidebar {
       height: 100%;
@@ -85,8 +92,24 @@
     <a href="#"><i class="bi bi-share"></i> Share</a>
     <a href="#"><i class="bi bi-cash-stack"></i> Donate</a>
   </div>
-
+<div class="banner-container">
+    <img class="banner-image" id="banner" src="" alt="Banner">
+  </div>
   <script>
+    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
+    
+    var bannerImage = document.getElementById("banner");
+    bannerImage.src = imageURL;
+    
+    bannerImage.onload = function() {
+      // Display the banner if the image loads successfully
+      document.querySelector(".banner-container").style.display = "block";
+    };
+    
+    bannerImage.onerror = function() {
+      // Hide the banner if the image fails to load
+      document.querySelector(".banner-container").style.display = "none";
+    };
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
