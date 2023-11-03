@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
     .banner-container {
       max-width: 100%;
@@ -12,10 +13,66 @@
       max-width: 100%;
       max-height: 100%;
     }
+
+    /* Sidebar styles */
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.3s;
+      z-index: 1;
+    }
+
+    .sidebar a {
+      padding: 15px 25px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      color: #f1f1f1;
+    }
+
+    .sidebar .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      font-size: 30px;
+    }
+
+    /* Sidebar open button styles */
+    .open-btn {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      font-size: 30px;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
-  <h1>welcome Popoola</h1>
+  <!-- Sidebar button -->
+  <div class="open-btn" id="openBtn" onclick="openSidebar()">&#9776;</div>
+
+  <!-- Sidebar -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">&times;</a>
+    <a href="#"><i class="bi bi-house-door"></i> Home</a>
+    <a href="#"><i class="bi bi-bookmark"></i> Bookmarks</a>
+    <a href="#"><i class="bi bi-grid"></i> More Apps</a>
+    <a href="#"><i class="bi bi-star"></i> Rate Us</a>
+    <a href="#"><i class="bi bi-share"></i> Share</a>
+    <a href="#"><i class="bi bi-cash-stack"></i> Donate</a>
+  </div>
+
   <div class="banner-container">
     <img class="banner-image" id="banner" src="" alt="Banner">
   </div>
@@ -36,6 +93,14 @@
       // Hide the banner if the image fails to load
       document.querySelector(".banner-container").style.display = "none";
     };
+
+    function openSidebar() {
+      document.getElementById("mySidebar").style.width = "250px";
+    }
+
+    function closeSidebar() {
+      document.getElementById("mySidebar").style.width = "0";
+    }
   </script>
 </body>
 </html>
