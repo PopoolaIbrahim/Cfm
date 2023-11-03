@@ -1,1 +1,40 @@
-<h1>hello world</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .banner-container {
+      max-width: 100%;
+      width: 468px;
+      height: 120px;
+      display: none; /* Initially hide the banner */
+    }
+    .banner-image {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner-container">
+    <img class="banner-image" id="banner" src="" alt="Banner">
+  </div>
+
+  <script>
+    // Replace 'imageURL' with your image URL
+    var imageURL = "https://example.com/banner.jpg";
+    
+    var bannerImage = document.getElementById("banner");
+    bannerImage.src = imageURL;
+    
+    bannerImage.onload = function() {
+      // Display the banner if the image loads successfully
+      document.querySelector(".banner-container").style.display = "block";
+    };
+    
+    bannerImage.onerror = function() {
+      // Hide the banner if the image fails to load
+      document.querySelector(".banner-container").style.display = "none";
+    };
+  </script>
+</body>
+</html>
