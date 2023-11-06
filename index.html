@@ -70,14 +70,22 @@
       max-width: 100%;
       height: auto;
     }
+
+
+
+
+
+
+    
     .button-container {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
       justify-content: center;
       padding: 10px;
     }
 
     .responsive-button {
+      flex: 0 0 calc(33.33% - 20px); /* 33.33% width for each button with 20px margin */
       display: flex;
       align-items: center;
       padding: 10px;
@@ -87,7 +95,7 @@
       border-radius: 5px;
       cursor: pointer;
       transition: background-color 0.3s;
-      max-width: 100%; /* Ensure it doesn't overflow */
+      margin: 10px; /* Margin on all sides */
     }
 
     .responsive-button img {
@@ -135,6 +143,23 @@
       <img src="your-icon-image.png" alt="Icon"> aab
     </button>
   </div>
+
+
+<div class="button-container">
+    <button class="responsive-button">
+      <img src="icon1.png" alt="Icon"> Button 1
+    </button>
+
+    <button class="responsive-button">
+      <img src="icon2.png" alt="Icon"> Button 2
+    </button>
+
+    <button class="responsive-button">
+      <img src="icon3.png" alt="Icon"> Button 3
+    </button>
+  </div>
+
+  
   
   <script>
     var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
