@@ -77,15 +77,13 @@
 
 
     
-    .button-container {
+.button-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       padding: 10px;
     }
-
-    .responsive-button {
-      width: 400px;
+.responsive-button {
       flex: 0 0 calc(33.33% - 20px); /* 33.33% width for each button with 20px margin */
       display: flex;
       align-items: center;
@@ -97,9 +95,11 @@
       cursor: pointer;
       transition: background-color 0.3s;
       margin: 10px; /* Margin on all sides */
+      max-width: 400px; /* Maximum width for responsiveness */
+      width: 100%; /* Expand to 100% within the container */
     }
 
-    .responsive-button img {
+ .responsive-button img {
       width: 24px; /* Adjust the size of the square image icon */
       height: 24px; /* Same as width to make it square */
       margin-right: 10px; /* Margin between the icon and text */
@@ -108,6 +108,9 @@
     .responsive-button:hover {
       background-color: #0056b3;
     }
+
+
+    
   </style>
 </head>
 <body>
