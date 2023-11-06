@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-   
     .header {
       background-color: #4CAF50;
       height: 80px;
@@ -20,9 +19,6 @@
       width: 100%;
       display: none; /* Initially hide the banner */
       margin-top: 1px; /* Add margin to move the banner below the header */
-      display: flex;
-      justify-content: center; /* Center horizontally */
-      align-items: center; /* Center vertically */
     }
 
     .banner-image {
@@ -79,8 +75,7 @@
     .button-container {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center; /* Center the buttons horizontally */
-      align-items: center; /* Center the buttons vertically */
+      justify-content: center;
       padding: 10px;
     }
 
@@ -89,7 +84,7 @@
       height: 60px;
       display: flex;
       align-items: center;
-      padding: 10px;
+      justify-content: center;
       background-color: #007bff;
       color: #fff;
       border: none;
@@ -97,7 +92,8 @@
       cursor: pointer;
       transition: background-color 0.3s;
       margin: 10px; /* Margin on all sides */
-      max-width: 100%; /* Maximum width for responsiveness */
+      max-width: 400px; /* Maximum width for responsiveness */
+      width: 100%; /* Expand to 100% within the container */
     }
 
     .responsive-button img {
@@ -128,7 +124,7 @@
     <a href="https://popoolaibrahim.github.io/Commands-For-Minecraft/"><i class="bi bi-house-door"></i> Home</a>
      <!--  <a href="#"><i class="bi bi-bookmark"></i> Bookmarks</a> -->
      <!--  <a href="#"><i class="bi bi-grid"></i> More Apps</a> -->
-     <!--  <a href="#"><i "bi bi-star"></i> Rate Us</a> -->
+     <!--  <a href="#"><i class="bi bi-star"></i> Rate Us</a> -->
      <!--  <a href="#"><i class="bi bi-share"></i> Share</a> -->
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
@@ -136,8 +132,8 @@
     <img class="banner-image" id="banner" src="" alt="Banner">
   </div>
 
- <div class="button-container">
-    <!-- 20 Responsive Buttons -->
+  <div class="button-container">
+    <!-- Add your 20 responsive buttons here -->
     <button class="responsive-button">
       <img src="icon1.png" alt="Icon"> Button 1
     </button>
@@ -148,9 +144,6 @@
 
     <!-- Add more buttons as needed -->
 
-    <button class="responsive-button">
-      <img src="icon20.png" alt="Icon"> Button 20
-    </button>
   </div>
 
   <script>
@@ -168,6 +161,7 @@
       // Hide the banner if the image fails to load
       document.querySelector(".banner-container").style.display = "none";
     };
+
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
