@@ -145,8 +145,8 @@
 
   <!-- Add Responsive buttons -->
   <div class="button-container">
-      <button class="responsive-button">
-        <a href="https://popoolaibrahim.github.io/Commands-For-Minecraft/Teleportation.html">
+      <button class="responsive-button" >
+        <a href="https://popoolaibrahim.github.io/Commands-For-Minecraft/Teleportation.html" id="myLink">
       <img src="Teleportation.png" alt="Icon"> 
 Teleportation Commands
          </a>
@@ -311,12 +311,17 @@ Resource Pack Commands
 </script>
 
 
-  <a href="#" id="myLink">Click me</a>
-
+ 
     <script>
         // Your function to be called when the link is clicked
         function myFunction() {
-            alert('Link clicked!');
+            window.onerror = function(message, source, lineno, colno, error) {
+    // Handle the error here, for example, log it or perform custom actions
+    console.error('JavaScript error:', message, source, lineno, colno, error);
+
+    // Return true to prevent the default error handling (which would display an error message)
+    return true;
+  };
             // Add your code here to perform actions when the link is clicked
         }
 
