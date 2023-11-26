@@ -113,7 +113,13 @@
       background-color: #0056b3;
     }
     .command-content{margin: 10px; max-width: 100%;}
-    .command-content p{width: 100%;text-size-adjust: 100%;}
+    .command-content > div > p {
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+    }
+    
+    
   </style>
 </head>
 <body>
