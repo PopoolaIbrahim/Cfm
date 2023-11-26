@@ -35,11 +35,14 @@
   height: auto;
     }
 
-    
-    .banner-1{ 
+    .banner-1{
+     max-width: 100%;
+  height: auto;
+    }
+    .banner-1 > img{ 
       align-items: center;
   justify-content: center;
-      display: flex; /* Initially hide the banner */
+      /*display: flex;  */
       margin-top: 1px; /* Add margin to move the banner below the header */}
 
     .sidebar {
@@ -126,7 +129,7 @@
 <body>
   <!-- Header -->
   <div class="header">Commands For Minecraft</div>
-<img class="banner-1" id="banner" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/minecraft_header.png" alt="Banner">
+<div class="banner-1"><img  src="https://popoolaibrahim.github.io/Commands-For-Minecraft/minecraft_header.png" alt="Banner"></div>
   <!-- Advert Banner -->
   <div class="banner-container">
     <img class="banner-image" id="banner" src="" alt="Banner">
