@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body{
-      background-color: gray;
+      background-color: white;
       justify-content: center;
           }
     .header {
@@ -77,39 +77,12 @@
       max-width: 100%;
       height: auto;
     }
-
-    .button-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    .responsive-button {
-      width: 250px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s;
-      margin: 10px; /* Margin on all sides */
-      max-width: 400px; /* Maximum width for responsiveness */
-      width: 100%; /* Expand to 100% within the container */
-    }
-
-    .responsive-button img {
-      width: 24px; /* Adjust the size of the square image icon */
-      height: 24px; /* Same as width to make it square */
-      margin-right: 10px; /* Margin between the icon and text */
-    }
-
-    .responsive-button:hover {
-      background-color: #0056b3;
+      
+    .command-content{margin: 10px; max-width: 100%;}
+    .command-content > div > p {
+  max-width: 100%;
+  box-sizing: border-box;
+  word-wrap: break-word;
     }
   </style>
 </head>
