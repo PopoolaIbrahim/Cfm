@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+  
 
     .sidebar {
       height: 100%;
@@ -110,9 +105,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+  <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+  
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Set Boundaries, Break Limits!</strong></h3><p><strong>Use Command:</strong>/worldborder set 100</p><p>Take control of your Minecraft world with /worldborder! This command allows you to set the size of the world border, limiting or expanding the playable area. Whether you're creating a confined challenge or an expansive landscape to explore, /worldborder lets you shape the boundaries of your virtual realm. Break free from the constraints and redefine the limits of your Minecraft adventures! 🌐</p></div>
@@ -131,22 +130,8 @@
 <div><h3 style="color: blue;"><strong>Twilight Grove Enchanted Forest!</strong></h3><p><strong>Use Command:</strong>/worldborder set 800 2000</p><p>Step into a realm of enchantment with a Twilight Grove Enchanted Forest using /worldborder! This command dynamically sets the world border, revealing a forest filled with towering trees and mystical flora as players explore. Whether you're cultivating magical landscapes or creating a sanctuary for mythical creatures, the Twilight Grove Enchanted Forest adds a touch of otherworldly beauty to your Minecraft world. Wander through the enchanted foliage, feel the magical energies, and let the enchanted forest become a breathtaking sanctuary in your virtual realm! 🌳🌲</p></div>
 <div><h3 style="color: blue;"><strong>Astral Observatory Starfield Portal!</strong></h3><p><strong>Use Command:</strong>/worldborder set 700 1600</p><p>Gaze upon the cosmic wonders with an Astral Observatory Starfield Portal using /worldborder! This command dynamically sets the world border, revealing a portal that transports players to a star-filled sky as they explore. Whether you're crafting celestial gateways or embarking on astral adventures, the Astral Observatory Starfield Portal adds a sense of awe and wonder to your Minecraft world. Step through the portal, feel the cosmic energies, and let the starfield become a mesmerizing spectacle in your virtual realm! ✨🌠</p></div>
   </div>
-
+<br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
 
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
