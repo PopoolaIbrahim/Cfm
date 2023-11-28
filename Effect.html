@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+   .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+ 
 
     .sidebar {
       height: 100%;
@@ -109,9 +104,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+   <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+  
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Supercharge Your Abilities!</strong></h3><p><strong>Use Command:</strong>/effect @p minecraft:strength 600 1</p><p>Become a powerhouse with /effect! This command grants you temporary status effects, and with a stroke of the keyboard, you can become superhuman. Activate super strength, gain night vision, or even defy gravity. Experiment with different effects to enhance your gameplay and conquer challenges with newfound abilities. Prepare to feel the rush of power surging through your pixelated veins! 💪</p></div>
@@ -130,23 +129,9 @@
 <div><h3 style="color: blue;"><strong>Phantom Haunt Nightmares!</strong></h3><p><strong>Use Command:</strong>/effect @a minecraft:night_vision 600 0; /execute as @a run /summon phantom ~ ~ ~ {CustomName:"HauntingPhantom",Health:30,Attributes:[{Name:"generic.attack_damage",Base:4},{Name:"generic.max_health",Base:30}],ActiveEffects:[{Id:9,Amplifier:1,Duration:9999999}]}</p><p>Experience the thrill of phantom hauntings with Phantom Haunt Nightmares using the power of /effect and /execute! This command grants players night vision and summons phantoms named "HauntingPhantoms," creating an eerie and haunting atmosphere. Whether you're designing haunted landscapes or crafting spooky challenges, the Phantom Haunt Nightmares add a chilling and immersive twist to your Minecraft adventures. Navigate the night, feel the phantom presence, and let the nightmares unfold in your virtual dreamscape! 🌑👻</p></div>
 <div><h3 style="color: blue;"><strong>Timeless Eternity Slow Motion!</strong></h3><p><strong>Use Command:</strong>/effect @p minecraft:slowness 600 5; /execute as @a run /summon area_effect_cloud ~ ~ ~ {CustomName:"TimeWarpEffect",Duration:600,Radius:2f,Particle:"cloud",Tags:["TimeWarp"]}</p><p>Experience the magic of slow-motion with Timeless Eternity Slow Motion using the power of /effect and /execute! This command grants players a slowness effect and summons an area effect cloud named "TimeWarpEffect," creating a captivating slow-motion experience. Whether you're crafting cinematic scenes or designing challenges in a time-altered dimension, the Timeless Eternity Slow Motion adds a dynamic and immersive twist to your Minecraft adventures. Move through the altered time, feel the eternal moment, and let the timeless eternity unfold in your virtual realm! ⏳🌀**</p></div>
   </div>
-
+<br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
     
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
