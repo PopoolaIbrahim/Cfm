@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+ 
 
     .sidebar {
       height: 100%;
@@ -110,9 +105,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+ <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+ 
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Personalize Your Pets!</strong></h3><p><strong>Use Command:</strong>/entitydata @e[type=wolf,name=Buddy] {CollarColor:4}</p><p>Give your furry companions a touch of personality! With /entitydata, you can customize your pets in ways never before possible. Use this command to change your wolf's collar color – just replace "Buddy" with your pet's name. Make your Minecraft world uniquely yours by adding a splash of color to your loyal companion. 🐾</p></div>
@@ -131,23 +130,9 @@
 <div><h3 style="color: blue;"><strong>Enchanted Coral Reef Fish!</strong></h3><p><strong>Use Command:</strong>/execute as @e[type=tropical_fish] run data merge entity @s {CustomName:"EnchantedFish",Attributes:[{Name:"generic.max_health",Base:10}],ActiveEffects:[{Id:16,Amplifier:1,Duration:9999999}]}</p><p>Transform your underwater realms with Enchanted Coral Reef Fish using /execute and /data! This command turns all tropical fish into "EnchantedFish," enhancing their health and giving them a perpetual enchanted glow. Whether you're creating magical underwater sanctuaries or seeking enchanting aquatic companions, the Enchanted Coral Reef Fish add a mesmerizing and ethereal touch to your Minecraft world. Dive into the enchanted waters, swim among the magical fish, and let the underwater realm become a haven of enchantment! 🐠✨</p></div>
 <div><h3 style="color: blue;"><strong>Mystical Wizardry Villagers!</strong></h3><p><strong>Use Command:</strong>/execute as @e[type=villager] run data merge entity @s {CustomName:"MysticalVillager",Attributes:[{Name:"generic.max_health",Base:30}],ActiveEffects:[{Id:6,Amplifier:1,Duration:9999999}]}</p><p>Infuse enchantment into your villages with Mystical Wizardry Villagers using /execute and /data! This command turns all villagers into "MysticalVillagers," boosting their health and giving them a perpetual magical aura. Whether you're cultivating wizardry communities or seeking mystical trades, the Mystical Wizardry Villagers add a magical and whimsical atmosphere to your Minecraft world. Stroll through the mystical village, witness the enchantment in the air, and let the charm of the wizardry villagers captivate your imagination! 🧙‍♂️✨</p></div>
   </div>
-
+ <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
+   
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
