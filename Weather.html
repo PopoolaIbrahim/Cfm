@@ -19,19 +19,6 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
-      justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
-    }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
-
     .sidebar {
       height: 100%;
       width: 0;
@@ -78,6 +65,12 @@
       height: auto;
     }
 
+  .advert-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
     .command-content{margin: 10px; max-width: 100%;}
     .command-content > div > p {
   max-width: 100%;
@@ -109,9 +102,14 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+ 
+  <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+ 
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Sunny Skies Ahead!</strong></h3><p><strong>Use Command:</strong>/weather clear</p><p>Let the sun shine! Use this command to clear away those gloomy clouds and enjoy a beautiful, sunny day in Minecraft. Whether you're exploring, building, or just soaking in the virtual rays, /weather clear will instantly brighten up your world. No more worrying about rain ruining your plans – with this command, you're in control of the weather! 🌞</p></div>
@@ -130,22 +128,8 @@
 <div><h3 style="color: blue;"><strong>Mystic Aurora Skydance!</strong></h3><p><strong>Use Command:</strong>/weather clear; /execute as @a run /summon minecraft:firework_rocket ~ ~1 ~ {FireworksItem:{id:"minecraft:firework_star",Count:1,tag:{Fireworks:{Explosions:[{Type:1,Colors:[I;10263708,12040119,14602026,14818816],Flicker:1,Trail:1}]}}}}</p><p>Immerse yourself in the enchanting dance of the skies with Mystic Aurora Skydance using /weather and /execute! Clear the weather to a crisp night and summon firework rockets that replicate the mesmerizing colors of the aurora borealis. Whether you're creating a magical atmosphere or celebrating celestial events, the Mystic Aurora Skydance adds a touch of wonder to your Minecraft nights. Gaze upon the dancing lights, feel the mystical energy, and let the aurora skydance captivate your virtual realm! 🌌✨</p></div>
 <div><h3 style="color: blue;"><strong>Radiant Sunburst Sunrise!</strong></h3><p><strong>Use Command:</strong>/weather clear; /execute as @a run /summon minecraft:firework_rocket ~ ~1 ~ {FireworksItem:{id:"minecraft:firework_star",Count:1,tag:{Fireworks:{Explosions:[{Type:0,Colors:[I;16776960,16776960,16776960],Flicker:1,Trail:1}]}}}}</p><p>Embrace the dawn with a burst of radiance using Radiant Sunburst Sunrise with /weather and /execute! Clear the weather to a fresh morning and summon firework rockets that paint the sky in the warm hues of a sunrise. Whether you're creating a picturesque morning scene or hosting sunrise ceremonies, the Radiant Sunburst Sunrise adds a touch of warmth and positivity to your Minecraft skies. Watch as the sunburst unfolds, bringing light to the world, and let the sunrise become a symbol of new beginnings! ☀️🎇</p></div>
   </div>
-
+ <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
 
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
