@@ -19,19 +19,6 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
-      justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
-    }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
-
     .sidebar {
       height: 100%;
       width: 0;
@@ -186,22 +173,9 @@
 <div><h3 style="color: blue;"><strong>Eternal Dawnbreak</strong></h3><p><strong>Use Command:</strong>/time set 0</p><p>🌅 Begin your eternal day with Eternal Dawnbreak using /time! This command sets your Minecraft world to a state of perpetual dawn, where the sun rises endlessly, casting a warm and golden glow. Experience the tranquil and hopeful atmosphere of a world forever bathed in the early morning light. Whether you're an early riser or simply appreciate the magic of dawn, this command offers you the opportunity to exist in a world where it's eternally dawn. Greet the perpetual dawn, enjoy the serenity of sunrise, and become the eternal herald of light in Eternal Dawnbreak! 🌞🐦🌄</p></div>
 <div><h3 style="color: blue;"><strong>Crimson Constellations</strong></h3><p><strong>Use Command:</strong>/time set 22000</p><p>🌌 Step into a world of perpetual crimson skies and celestial wonders with Crimson Constellations using /time! This command sets your Minecraft world to a state of constant twilight, where the skies are illuminated by mesmerizing auroras that dance in shades of deep red and orange. Imagine a world where it's forever on the brink of day and night, and the northern lights paint the heavens with their brilliance in a crimson display. Whether you're an admirer of both natural phenomena and cosmic beauty or simply seek a serene and enchanting atmosphere, this command allows you to experience a world eternally illuminated by the celestial spectacle of the crimson constellations. Gaze at the stunning crimson auroras, explore the beauty of the night, and become the eternal celestial observer in Crimson Constellations! 🌅🌌🌠</p></div>
   </div>
-
+<br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
+   
 
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
