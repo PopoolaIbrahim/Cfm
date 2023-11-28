@@ -19,19 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
-
+  
     .sidebar {
       height: 100%;
       width: 0;
@@ -109,9 +103,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+  <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+  
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Communicate in Style!</strong></h3><p><strong>Use Command:</strong>/tell @p Hey there, adventurer!</p><p>Connect with your fellow players using /tell! This command allows you to send private messages to specific players, fostering communication and collaboration. Whether you're coordinating strategies, sharing secrets, or just chatting with friends, /tell lets you communicate in style. Break the boundaries of in-game chat and embark on exciting conversations with players across your Minecraft world! 🗨️</p></div>
@@ -129,23 +127,9 @@
 <div><h3 style="color: blue;"><strong>Echoes of Ancient Wisdom!</strong></h3><p><strong>Use Command:</strong>/tellraw @a {"text":"Whispers of ancient wisdom fill the air...","color":"dark_green"}</p><p>Immerse your players in the echoes of history with Echoes of Ancient Wisdom using /tellraw! This command sends a mysterious message to all players, hinting at the secrets buried in the depths of your Minecraft world. Whether you're unraveling ancient lore or creating an atmosphere of mystique, let the Echoes of Ancient Wisdom spark curiosity and beckon players to explore the untold stories that linger in the virtual realm! 🗿🔮</p></div>
 <div><h3 style="color: blue;"><strong>Mythic Artifact Awakening!</strong></h3><p><strong>Use Command:</strong>/tellraw @a {"text":"The dormant power of a mythic artifact stirs...","color":"dark_purple"}</p><p>Unleash mythical powers with Mythic Artifact Awakening using /tellraw! This command sends a mysterious message to all players, hinting at the awakening of ancient artifacts. Whether you're crafting epic storylines or introducing legendary items, let the Mythic Artifact Awakening ignite the spark of anticipation and guide players through the legendary journey that awaits! ⚔️🔥</p></div>
   </div>
-
+<br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
+   
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
