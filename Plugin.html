@@ -19,19 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
-
+  
     .sidebar {
       height: 100%;
       width: 0;
@@ -111,9 +105,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+  <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+ 
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Extend Your Minecraft Universe!</strong></h3><p><strong>Use Command:</strong>/plugin reload</p><p>Embrace the limitless possibilities of /plugin! This command lets you reload server plugins, opening the door to a universe of customizations and enhancements. Whether you're adding new features, fixing bugs, or fine-tuning your server experience, /plugin reload ensures that your Minecraft world is always evolving. Dive into the world of plugins and watch as your server transforms into a unique and dynamic playground! 🚀</p></div>
@@ -131,23 +129,9 @@
 <div><h3 style="color: blue;"><strong>QuestMaster Adventure Quests!</strong></h3><p><strong>Use Command:</strong>/plugin enable AdventureQuests</p><p>Turn your server into an epic quest hub with QuestMaster Adventure Quests using /plugin! This command activates the "AdventureQuests" plugin, providing a framework for players to embark on and complete thrilling quests. Whether you're building intricate storylines or fostering cooperative adventures, the QuestMaster Adventure Quests plugin transforms your server into a realm of epic quests and heroic deeds. Accept the quests, face the challenges, and let the adventure quests unfold in your Minecraft community! 🏹📜</p></div>
 <div><h3 style="color: blue;"><strong>MiniGames Madness Carnival!</strong></h3><p><strong>Use Command:</strong>/plugin enable MiniGamesCarnival</p><p>Turn your server into a carnival of mini-games with MiniGames Madness Carnival using /plugin! This command activates the "MiniGamesCarnival" plugin, providing a collection of entertaining mini-games for players to enjoy. Whether you're fostering friendly competition or organizing carnival-themed events, the MiniGames Madness Carnival plugin transforms your server into a hub of excitement and amusement. Play the games, challenge your friends, and let the mini-games madness bring joy and laughter to your Minecraft community! 🎪🎮</p></div>
   </div>
-
+ <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
     
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
