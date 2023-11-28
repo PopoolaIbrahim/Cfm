@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+   .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+ 
 
     .sidebar {
       height: 100%;
@@ -109,10 +104,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+   <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
 
+
+  <!-- Main Page Content-->
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Create Wonders with Redstone!</strong></h3><p><strong>Use Command:</strong>/setblock ~ ~1 ~ minecraft:redstone_block</p><p>Unleash the power of redstone with /setblock! This command lets you instantly place a redstone block in the world, opening up a world of possibilities for automation and contraptions. Whether you're a redstone wizard or just getting started, experiment with this command to create intricate circuits and marvel at the wonders of redstone engineering! 🔴⚙️</p></div>
 <div><h3 style="color: blue;"><strong>Disco Fever!</strong></h3><p><strong>Use Command:</strong>/setblock ~ ~1 ~ minecraft:note_block{note:11,powered:1}</p><p>Light up your world with the rhythm of /setblock! This command places a powered note block emitting the sound of disco beats. Create a dance floor that pulses with energy or craft musical contraptions that respond to your every step. The enchanting melodies of Minecraft are yours to command, turning your creations into a symphony of redstone brilliance! 🎶🕺</p></div>
@@ -130,23 +128,9 @@
 <div><h3 style="color: blue;"><strong>Celestial Clockwork Observatory!</strong></h3><p><strong>Use Command:</strong>/execute as @a run /fill ~ ~1 ~ ~10 ~1 ~10 minecraft:observer replace minecraft:air; /execute as @a[scores={observatoryTimer=1..}] run /fill ~ ~1 ~ ~10 ~1 ~10 minecraft:note_block replace minecraft:air</p><p>Witness the celestial dance of time with a Celestial Clockwork Observatory using /execute and /fill! This command places observers and activates the Observatory Timer score to trigger a symphony of note blocks, creating a mesmerizing display of celestial clockwork. Whether you're constructing grand observatories or hosting astronomical events, the Celestial Clockwork Observatory turns your Minecraft world into a realm of cosmic wonder. Listen to the rhythmic ticking, watch the celestial mechanisms, and let the observatory become a beacon of timekeeping in your virtual domain! 🕰️🌌</p></div>
 <div><h3 style="color: blue;"><strong>Enchanted Melody Music Box!</strong></h3><p><strong>Use Command:</strong>/execute as @a run /fill ~ ~1 ~ ~10 ~1 ~10 minecraft:note_block[note=0] replace minecraft:air; /execute as @a[scores={musicBoxTimer=1..}] run /fill ~ ~1 ~ ~10 ~1 ~10 minecraft:jukebox replace minecraft:air</p><p>Create a symphony of enchantment with an Enchanted Melody Music Box using /execute and /fill! This command places note blocks and activates the Music Box Timer score to trigger a harmonious display of melodies. Whether you're designing enchanted spaces or hosting musical events, the Enchanted Melody Music Box combines magic and music in a delightful display. Listen to the enchanting notes, watch the melodies unfold, and let the music box become a source of magical tunes in your Minecraft world! 🎶✨</p></div>
   </div>
-
+  <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
+   
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
