@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+   .advert-container {
+     display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
-    }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+      padding: 10px;
+    } 
+ 
 
     .sidebar {
       height: 100%;
@@ -109,10 +104,11 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
-
+   <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+  
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Build Instantly with Structures!</strong></h3><p><strong>Use Command:</strong>/structure void ~ ~ ~</p><p>Elevate your building game with /structure! This command lets you instantly create a structure void, allowing you to clear space for your grand designs. Whether you're constructing a towering castle or an intricate redstone contraption, /structure is the key to efficiency and precision. Watch as your architectural dreams come to life with just a few simple commands! 🏗️</p></div>
 <div><h3 style="color: blue;"><strong>Instant Underwater Kingdom!</strong></h3><p><strong>Use Command:</strong>/structure load Atlantis ~ ~ ~</p><p>Dive into the depths with /structure! This command loads a pre-built structure named "Atlantis," instantly transforming your surroundings into a magnificent underwater kingdom. Marvel at the beauty of coral reefs and majestic sea creatures as you explore your newfound aquatic domain. With a few simple commands, create breathtaking landscapes and embark on adventures beneath the waves! 🌊🏰</p></div>
@@ -129,23 +125,9 @@
 <div><h3 style="color: blue;"><strong>Luminous Tree of Elderglow!</strong></h3><p><strong>Use Command:</strong>/structure load ElderglowTree ~ ~ ~</p><p>Stand in awe of nature's brilliance with a Luminous Tree of Elderglow using /structure! This command loads a pre-built structure named "ElderglowTree," featuring a majestic tree adorned with glowing foliage. Whether you're creating enchanted forests or seeking a symbol of natural splendor, the Luminous Tree of Elderglow becomes a radiant centerpiece in your Minecraft world. Bask in the glow, marvel at the luminescent leaves, and let the luminous tree become a beacon of nature's grandeur! 🌳💡</p></div>
 <div><h3 style="color: blue;"><strong>Starlight Cathedral Sanctuary!</strong></h3><p><strong>Use Command:</strong>/structure load StarlightCathedral ~ ~ ~</p><p>Seek solace in celestial realms with a Starlight Cathedral Sanctuary using /structure! This command loads a pre-built structure named "StarlightCathedral," featuring a cathedral adorned with starlight. Whether you're creating sacred spaces or seeking a haven for reflection, the Starlight Cathedral Sanctuary offers a majestic and serene retreat in your Minecraft world. Walk through the cathedral, bask in the gentle starlight, and let the celestial sanctuary become a place of tranquility and spiritual reverence! ⛪🌟</p></div>
   </div>
-
+<br><br><br><br><br><br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
+   
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
