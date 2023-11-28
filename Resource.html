@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+     display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
-    }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+      padding: 10px;
+    } 
+  
 
     .sidebar {
       height: 100%;
@@ -108,10 +103,11 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
-
+  <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+  
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Customize Your Minecraft Experience!</strong></h3><p><strong>Use Command:</strong>/resourcepack list</p><p>Dive into a world of customization with /resourcepack! This command allows you to view the available resource packs and choose the one that suits your aesthetic preferences. Whether you're into realistic textures, pixel art, or a complete game overhaul, /resourcepack lets you personalize your Minecraft experience. Transform your world into a visual masterpiece and discover the beauty of custom resource packs! 🎨</p></div>
 <div><h3 style="color: blue;"><strong>Retro Vibes Unleashed!</strong></h3><p><strong>Use Command:</strong>/resourcepack enable RetroCraft</p><p>Step into the past with /resourcepack! This command activates the "RetroCraft" resource pack, infusing your Minecraft world with nostalgic pixel art and retro vibes. Immerse yourself in a world that harkens back to the golden age of gaming. Customize your experience and relive the magic of classic aesthetics with the click of a button! 🕹️🎮</p></div>
@@ -128,23 +124,8 @@
 <div><h3 style="color: blue;"><strong>Neon Nights Cityscape Palette!</strong></h3><p><strong>Use Command:</strong>/resourcepack enable NeonCityPalette</p><p>Transform your Minecraft world into a futuristic cityscape with /resourcepack! This command activates the "NeonCityPalette" resource pack, infusing the environment with vibrant neon hues. Immerse yourself in the dazzling lights of a futuristic metropolis, where every block and structure radiates with the energy of a neon-lit night. Customize your cityscape adventure, embrace the cyberpunk vibes, and let the Neon Nights Cityscape Palette redefine the visual aesthetic of your Minecraft escapades! 🌃💙</p></div>
 <div><h3 style="color: blue;"><strong>Techno Futurism Overhaul!</strong></h3><p><strong>Use Command:</strong>/resourcepack enable TechnoFuturism</p><p>Propel your Minecraft world into the future with a Techno Futurism Overhaul using /resourcepack! This command activates the "TechnoFuturism" resource pack, transforming your environment with sleek and futuristic designs. Immerse yourself in the cutting-edge aesthetics, where every block and structure reflects the advancements of technology. Customize your adventure, embrace the futuristic vibes, and let the Techno Futurism Overhaul redefine the visual landscape of your Minecraft escapades! 🚀🤖</p></div>
   </div>
-
+<br><br><br><br><br><br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
