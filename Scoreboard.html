@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+  
 
     .sidebar {
       height: 100%;
@@ -110,9 +105,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+ <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+ 
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Compete and Conquer!</strong></h3><p><strong>Use Command:</strong>/scoreboard objectives add Kills playerKillCount</p><p>Bring competition to the next level with /scoreboard! This command allows you to track player kills, adding a competitive edge to your Minecraft world. Create objectives, track scores, and see who emerges victorious in epic battles. Whether you're hosting a PvP tournament or just want to keep score among friends, /scoreboard is your ticket to competitive gaming in Minecraft! 🏆</p></div>
@@ -131,23 +130,9 @@
 <div><h3 style="color: blue;"><strong>Legendary Treasure Hunter Score!</strong></h3><p><strong>Use Command:</strong>/scoreboard objectives add TreasureHuntsCompleted minecraft.custom:minecraft.treasure_hunted</p><p>Showcase your treasure-hunting prowess with a Legendary Treasure Hunter Score using /scoreboard! This command adds a "TreasureHuntsCompleted" objective, allowing players to track the number of successfully completed treasure hunts. Whether you're crafting hidden challenges or organizing epic treasure hunts, the scoreboard becomes a testament to your legendary exploration skills. Discover the treasures, claim your rewards, and let the allure of hidden riches guide you in the world of Minecraft! 🗝️🏴‍☠️</p></div>
 <div><h3 style="color: blue;"><strong>Grand Architect Master Builder Score!</strong></h3><p><strong>Use Command:</strong>/scoreboard objectives add MasterBuilder minecraft.custom:minecraft.build_one_cm</p><p>Showcase your architectural prowess with a Grand Architect Master Builder Score using /scoreboard! This command adds a "MasterBuilder" objective, allowing players to track the number of blocks built in centimeters. Whether you're constructing towering structures or intricate designs, the scoreboard becomes a testament to your mastery as a grand architect. Build the marvels, showcase your creations, and let the allure of grand architecture guide you in the world of Minecraft! 🏰📏</p></div>
   </div>
-
+ <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
     
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
