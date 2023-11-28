@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="150">
+
+  <!-- Rectangle -->
+  <rect x="10" y="10" width="80" height="60" fill="blue" />
+
+  <!-- Circle -->
+  <circle cx="150" cy="50" r="30" fill="green" />
+
+</svg>
