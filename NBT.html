@@ -20,19 +20,6 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
-      justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
-    }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
-
     .sidebar {
       height: 100%;
       width: 0;
@@ -78,7 +65,12 @@
       max-width: 100%;
       height: auto;
     }
-
+.advert-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
    .command-content{margin: 10px; max-width: 100%;}
     .command-content > div > p {
   max-width: 100%;
@@ -112,10 +104,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
 
+  <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+  <!-- Main Page Content-->
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Item Customizer</strong></h3><p><strong>Use Command:</strong>/nbtedit item</p><p>🛠️✨ Unleash your inner blacksmith with the Item Customizer! This NBT Editing command provides you with the ability to modify and fine-tune your items like never before. You can adjust enchantments, rename items, and even customize attributes to create the perfect gear for your Minecraft adventures. Whether you're a meticulous item collector, a seasoned warrior, or just someone who loves to add a personal touch to your tools and weapons, this command empowers you to craft items that truly shine. Dive into the world of item crafting, forge legendary gear, and become the ultimate Minecraft blacksmith with the Item Customizer! ⚔️🏹🌟</p></div>
 <div><h3 style="color: blue;"><strong>Biome Sculptor</strong></h3><p><strong>Use Command:</strong>/nbtedit biome</p><p>🌍🏞️ Shape the very landscape of your Minecraft world with the Biome Sculptor! This NBT Editing command lets you have control over biomes, allowing you to modify and transform the terrain at your will. Change deserts into lush forests, tundras into tropical paradises, and create the custom environment you've always dreamed of. Whether you're an aspiring terraformer, a landscape artist, or just someone looking to add a unique touch to your world, this command gives you the power to be the master of your Minecraft geography. Dive into the world of biome manipulation, craft the world of your dreams, and witness the wonders of the Biome Sculptor! 🌴🗻🏕️</p></div>
@@ -135,22 +130,9 @@
 <div><h3 style="color: blue;"><strong>Mob Whisperer</strong></h3><p><strong>Use Command:</strong>/nbtedit mob</p><p>🐾🤖 Be the master of mobs with the Mob Whisperer! This NBT Editing command allows you to customize, create, and control the behavior of Minecraft mobs. Modify their appearances, abilities, and interactions to suit your adventures. Whether you're a zookeeper, a creature creator, or simply someone who wants to fill your world with fascinating creatures, this command empowers you to be the ultimate mob enthusiast. Dive into the world of mob manipulation, populate your Minecraft realm with unique creatures, and explore the untamed with the Mob Whisperer! 🦁🦄🐺</p></div>
   </div>
 
+  <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
+  
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
