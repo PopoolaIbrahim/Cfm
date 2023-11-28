@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+    .advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
+  
 
     .sidebar {
       height: 100%;
@@ -108,9 +103,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+ <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+ 
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Level Up Your Skills!</strong></h3><p><strong>Use Command:</strong>/advancement grant @p only minecraft:adventure/kill_a_mob</p><p>Achieve greatness with /advancement! This command lets you grant specific advancements to players, rewarding them for their accomplishments. Whether it's slaying a mighty dragon or mastering the art of farming, use /advancement to level up your skills and show off your achievements in style. Collecting advancements has never been more exciting! 🌟</p></div>
@@ -129,23 +128,9 @@
 <div><h3 style="color: blue;"><strong>Celestial Ascension Challenge!</strong></h3><p><strong>Use Command:</strong>/advancement grant @p only minecraft:adventure/summon_iron_golem</p><p>Ascend to new heights with the Celestial Ascension Challenge using /advancement! This command grants the "Summon Iron Golem" advancement, challenging players to summon and befriend an iron golem. Whether you're establishing guardian protectors or testing the mettle of aspiring adventurers, the Celestial Ascension Challenge becomes a symbol of your mastery over golem summoning. Conjure the iron golem, forge celestial bonds, and let the ascension challenge unfold in your Minecraft realm! 🤖🌠</p></div>
 <div><h3 style="color: blue;"><strong>Celestial Explorer's Quest!</strong></h3><p><strong>Use Command:</strong>/advancement grant @p only minecraft:adventure/explore_all_structures</p><p>Embark on a celestial journey with Celestial Explorer's Quest using /advancement! This command grants the "Explore All Structures" advancement, challenging players to traverse and discover every structure in your world. Whether you're uncovering hidden ruins or marveling at architectural wonders, the Celestial Explorer's Quest becomes a symbol of your mastery over the diverse structures. Explore the realms, conquer the challenges, and let the celestial wonders unfold in your Minecraft expedition! 🌌🏰</p></div>
   </div>
-
+ <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
     
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
