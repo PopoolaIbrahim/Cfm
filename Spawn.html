@@ -19,18 +19,13 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
+.advert-container {
+      display: flex;
+      flex-wrap: wrap;
       justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
+      padding: 10px;
     }
 
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
 
     .sidebar {
       height: 100%;
@@ -109,9 +104,13 @@
      <!--  <a href="#"><i class="bi bi-cash-stack"></i> Donate</a> -->
   </div>
 
-  <div class="banner-container">
-    <img class="banner-image" id="banner" src="" alt="Banner">
-  </div><br>
+    <!-- Main Page Advert Banner -->
+  <div class="advert-container">
+    <a href="https://aliexpress.com"><img class="advert-image" src="https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png" alt="Banner"></a>
+  </div>
+
+ 
+  <!-- Main Page Content-->
 
   <div class="command-content">
 <div><h3 style="color: blue;"><strong>Summon Your Allies!</strong></h3><p><strong>Use Command:</strong>/summon zombie ~ ~ ~</p><p>Need some company on your Minecraft journey? Use /summon to bring forth a friendly zombie to keep you company. Whether you want a pet or an undead bodyguard, this command lets you control the creatures that inhabit your world. Customize your experience by summoning mobs with specific attributes, and watch as your virtual entourage grows! 🧟</p></div>
@@ -130,23 +129,9 @@
 <div><h3 style="color: blue;"><strong>Celestial Moonlight Owl Guardians!</strong></h3><p><strong>Use Command:</strong>/summon owl ~ ~ ~ {CustomName:"MoonlightOwl",Health:25,Attributes:[{Name:"generic.attack_damage",Base:5},{Name:"generic.max_health",Base:25}],ActiveEffects:[{Id:11,Amplifier:1,Duration:9999999}]}</p><p>Summon guardians of the night with Celestial Moonlight Owl Guardians using /summon! This command brings forth owls named "MoonlightOwls," embodying the serene essence of moonlight and dedicated to protecting your realm. Whether you're cultivating mystical landscapes or seeking nocturnal companions, the Celestial Moonlight Owl Guardians add an ethereal and watchful presence to your Minecraft world. Command the owl guardians, let them soar under the moon, and watch as they guard with celestial grace! 🦉🌙</p></div>
 <div><h3 style="color: blue;"><strong>Lunar Guardian Spirits!</strong></h3><p><strong>Use Command:</strong>/summon vex ~ ~ ~ {CustomName:"LunarSpirits",Health:20,Attributes:[{Name:"generic.attack_damage",Base:4},{Name:"generic.max_health",Base:20}],ActiveEffects:[{Id:10,Amplifier:1,Duration:9999999}]}</p><p>Summon ethereal protectors with Lunar Guardian Spirits using /summon! This command brings forth vexes named "LunarSpirits," embodying the mystical essence of the moon and dedicated to safeguarding your realm. Whether you're crafting celestial landscapes or seeking guardians with a spiritual aura, the Lunar Guardian Spirits add an otherworldly and protective presence to your Minecraft world. Command the lunar spirits, let them hover with grace, and watch as they guard your domain with serene might! 🌙👻</p></div>
   </div>
-
+ <br> <br> <br> <br> <br> <br>
   <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
-
+   
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
