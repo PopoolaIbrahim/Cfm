@@ -20,19 +20,6 @@
       font-weight: bold;
     }
 
-    .banner-container {
-      max-width: 100%;
-      width: 100%;
-      justify-content: center;
-      display: none; /* Initially hide the banner */
-      margin-top: 1px; /* Add margin to move the banner below the header */
-    }
-
-    .banner-image {
-      max-width: 100%;
-      height: auto;
-    }
-
     .sidebar {
       height: 100%;
       width: 0;
@@ -233,23 +220,10 @@
 <div><h3 style="color: blue;"><strong>Teleport to the Enchanted Waterfall Retreat</strong></h3><p><strong>Use Command:</strong>/execute as @a[distance=..100] run tp @s ~ ~ ~</p><p>💧 Immerse yourself in a tranquil paradise with /execute! 💧 This command teleports all players within a 100-block radius to the enchanting Waterfall Retreat, nestled within a secluded forest. Whether you're meditating by the soothing waters, enjoying the serenity of nature, or hosting relaxation-themed events, this command transports you to a peaceful and rejuvenating waterfall oasis. Prepare to unwind amidst the cascading waters and unlock the beauty of the Enchanted Waterfall Retreat in Minecraft! 🌲🧘‍♂️🏞️</p></div>
   </div>
 
-  
-  <script>
-    var imageURL = "https://popoolaibrahim.github.io/Commands-For-Minecraft/advert.png";
-    
-    var bannerImage = document.getElementById("banner");
-    bannerImage.src = imageURL;
-    
-    bannerImage.onload = function() {
-      // Display the banner if the image loads successfully
-      document.querySelector(".banner-container").style.display = "block";
-    };
-    
-    bannerImage.onerror = function() {
-      // Hide the banner if the image fails to load
-      document.querySelector(".banner-container").style.display = "none";
-    };
+  <br> <br> <br> <br> <br> <br>
 
+  <script>
+   
     function openSidebar() {
       document.getElementById("mySidebar").style.width = "250px";
     }
